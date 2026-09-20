@@ -5,6 +5,20 @@ type Props = HTMLAttributes<'a'>;
 
 const { href, class: className, ...props } = Astro.props;
 ---
-<a href="/blogs/{href}" class:list={[className]} {...props}>
-        <slot />
+<a href={`/blog/${href}`} class:list={[className]} {...props}>
+	<slot name="title"><h3>Title</h3></slot>
+	<slot name="desc"><p>Those who know</p></slot>
+	<hr>
 </a>
+<style>
+  a {
+    text-decoration: none;
+    color: var(--purple);
+  }
+  hr {
+	background-color: var(--black);
+	background-color: var(--black);
+	border-color: var(--highlight);
+	height: 2px;
+  }
+</style>

@@ -1,1 +1,1 @@
-export const SITE_TITLE = 'PLACEHOLDER BLOG NAME'
+export const SITE_TITLE = 'MAX BLOG'

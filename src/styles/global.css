@@ -3,7 +3,9 @@
     --primary-color: #ccb163;
     --secondary-color: #b1cc63;
     --tertiary-color: #cc7d63;
-    --dark-shade: #a08c50;
+    --highlight: #a08c50;
+    --purple: #8a4f9e;
+    --blue: #4c62a5; 
     --black: #000000;
     /*text*/
     --title-font: 'Courier New', monospace;  
@@ -39,7 +41,7 @@ nav a.active {
 	width: 50%;
 	height: 900px;
 	border-radius: 2%;
-	border-color: var(--dark-shade);
+	border-color: var(--highlight);
 	border-width: 10px;
 	border-style: solid;
 	box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.05);
