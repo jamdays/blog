@@ -1,17 +1,23 @@
 ---
 import ThemeIcon from './ThemeIcon.astro';
-
+import HeaderLink from './HeaderLink.astro';
 import '../styles/global.css';
 ---
 <header>
     <nav>
-        <img src="/favicon.png"/>
+        <div style="width:33%;">
+        <a href="/"><img src="/favicon.png"/></a>
+	</div>
+        <div style="width:33%; place-items:center;">
         <div id="mid-bar">
-        <h3><a>Blog</a></h3>
-        <h3><a>Other</a></h3>
-        <h3><a>About</a></h3>
+        <h3><HeaderLink href="/blog">Blog</HeaderLink></h3>
+        <h3><HeaderLink href="/other">Other</HeaderLink></h3>
+        <h3><HeaderLink href="/">About</HeaderLink></h3>
         </div>
+	</div>
+        <div style="width:33%; display: flex; justify-content: flex-end;">
         <ThemeIcon/>
+	</div>
     </nav>
 </header>
 <style>

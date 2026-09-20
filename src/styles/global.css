@@ -3,6 +3,7 @@
     --primary-color: #ccb163;
     --secondary-color: #b1cc63;
     --tertiary-color: #cc7d63;
+    --dark-shade: #a08c50;
     --black: #000000;
     /*text*/
     --title-font: 'Courier New', monospace;  
@@ -11,30 +12,43 @@
 body {
     margin: 0;
     background-color: var(--primary-color);
+    font-family: var(--title-font);
 }
 header {
     margin: 0;
     padding: 0 1em;
     background-color: var(--primary-color);
-    box-shadow: 0 2px 8px var(--black);
 }
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary-color);
-    font-family: var(--title-font);
 }
 nav a {
         padding: 1em 0.5em;
         color: var(--black);
         border-bottom: 4px solid transparent;
         text-decoration: none;
-        font-family: var(--title-font);
 }
 nav a.active {
         text-decoration: none;
-        border-bottom-color: var(--secondary-color);
+        border-bottom-color: var(--tertiary-color);
+}
+.card{
+	width: 50%;
+	height: 900px;
+	border-radius: 2%;
+	border-color: var(--dark-shade);
+	border-width: 10px;
+	border-style: solid;
+	box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.05);
+	padding: 1em 0.5em;
+	margin: auto;
+}
+.lr-box{
+	display: flex;
+	gap: .75em;
 }
 #mid-bar{
     display: flex;
