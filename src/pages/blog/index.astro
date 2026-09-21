@@ -1,9 +1,16 @@
 ---
+import { getCollection } from 'astro:content';
 import Header  from "@components/Header.astro";
 import BlogLink from "@components/BlogLink.astro";
 import BaseHead from "@components/BaseHead.astro";
 import {Font} from 'astro:assets';
 import '@styles/global.css';
+
+const posts = await getCollection('blog');
+console.log(posts);
+
+// 2. (Optional) Sort posts so newest appear first
+//posts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 ---
 
 <html lang="en">
@@ -13,7 +20,14 @@ import '@styles/global.css';
 	<Header/>
 	<body>
 		<div class="card">
-			<BlogLink href=".."></BlogLink>
+		{
+		  posts.map((post) => (
+		    <BlogLink href={post.id}>
+		      <h3 slot="title">{post.data.title}</h3>
+		      <p slot="desc">{post.data.description}</p>
+		    </BlogLink>
+		  ))
+		}
 		</div>
 	</body>
 </html>

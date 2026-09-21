@@ -37,6 +37,12 @@ nav a.active {
         text-decoration: none;
         border-bottom-color: var(--tertiary-color);
 }
+hr {
+	background-color: var(--black);
+	background-color: var(--black);
+	border-color: var(--highlight);
+	height: 2px;
+}
 .card{
 	width: 50%;
 	height: 900px;
