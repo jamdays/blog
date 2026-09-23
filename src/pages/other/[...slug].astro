@@ -1,20 +1,35 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import SotW from '@layouts/SotW.astro';
+import QotW from '@layouts/QotW.astro';
  
 export async function getStaticPaths() {
-        const posts = await getCollection('sotw');
-        return posts.map((post) => ({
-	params: { slug: `sotw/${post.id}` },
-                props: post,
+        const songs = await getCollection('sotw');
+        const quotes = await getCollection('qotw');
+
+        const quotePaths = quotes.map((quote) => ({
+	params: { slug: `qotw/${quote.id}` },
+	props: {entry: quote, type: 'qotw' as const},
         }));
+
+        const songPaths = songs.map((song) => ({
+	params: { slug: `sotw/${song.id}` },
+	props: {entry: song, type: 'sotw' as const},
+        }));
+
+
+	return [...songPaths, ...quotePaths]
+	
 }
-type Props = CollectionEntry<'sotw'>;
  
-const post = Astro.props;
-const { Content } = await render(post);
+const {entry, type} = Astro.props;
+const { Content } = await render(entry);
 ---
  
-<SotW {...post.data}>
+{
+type === 'sotw' ? (<SotW {...entry.data}>
         <Content />
-</SotW>
+</SotW>) : (<QotW {...entry.data}>
+	<Content />
+</QotW>)
+}

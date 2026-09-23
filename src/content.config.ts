@@ -41,7 +41,7 @@ const qotw = defineCollection({
                 z.object({
                         quote: z.string(),
                         author: z.string(),
-			date: z.string(),
+			releaseDate: z.string(),
                         pubDate: z.coerce.date(),
                         updatedDate: z.string().optional(),
                 }),    

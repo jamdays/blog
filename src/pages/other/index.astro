@@ -2,11 +2,21 @@
 import { getCollection } from 'astro:content';
 import Header  from "@components/Header.astro";
 import SotWLink from "@components/SotWLink.astro";
+import QotWLink from "@components/QotWLink.astro";
 import BaseHead from "@components/BaseHead.astro";
 import {Font} from 'astro:assets';
 import '@styles/global.css';
 
-const sotw = await getCollection('sotw');
+const songs = await getCollection('sotw');
+const quotes = await getCollection('qotw');
+
+const posts = [
+  ...songs.map((song) => ({ type: 'sotw' as const, entry: song })),
+  ...quotes.map((quote) => ({ type: 'qotw' as const, entry: quote })),
+];
+
+posts.sort((a, b) => new Date(b.entry.data.pubDate).getTime() - new Date(a.entry.data.pubDate).getTime());
+
 ---
 
 <html lang="en">
@@ -17,11 +27,15 @@ const sotw = await getCollection('sotw');
 	<body>
 		<div class="card">
 		{
-		  sotw.map((post) => (
-		  <SotWLink href={post.id} imgsrc={post.data.coverArt}>
-		      <h3 slot="title">{post.data.title}</h3>
-		      <p slot="artist">{post.data.artist}</p>
-		    </SotWLink>
+		  posts.map((post) => (
+		  post.type === 'sotw' ? (
+		  <SotWLink href={post.entry.id} imgsrc={post.entry.data.coverArt}>
+		      <h3 slot="title">{post.entry.data.title}</h3>
+		      <p slot="artist">{post.entry.data.artist} &#x2022; {post.entry.data.releaseDate}</p>
+		  </SotWLink>) : (<QotWLink href={post.entry.id}>
+			  <h3 slot="quote">"{post.entry.data.quote}"</h3>
+			  <p slot="author">- {post.entry.data.author} &#x2022; {post.entry.data.releaseDate}</p>
+	  	  </QotWLink>)
 		  ))
 		}
 		</div>
