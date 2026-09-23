@@ -11,7 +11,7 @@ const blog = defineCollection({
                         title: z.string(),
                         description: z.string(),
                         // Transform string to Date object
-                        pubDate: z.string(),
+                        pubDate: z.coerce.date(),
                         updatedDate: z.string().optional(),
                         /*heroImage: z.optional(image()),*/
                 }),    
@@ -27,11 +27,25 @@ const sotw = defineCollection({
                         artist: z.string(),
 			link: z.string(),
 			releaseDate: z.string(),
-                        pubDate: z.string(),
+                        pubDate: z.coerce.date(),
                         updatedDate: z.string().optional(),
                         coverArt: z.optional(image()),
                 }),    
 });
 
+const qotw = defineCollection({
+        // Load Markdown and MDX files in the `src/content/other/qotw/` directory.
+        loader: glob({ base: './src/content/other/qotw', pattern: '**/*.{md,mdx}' }),
+        // Type-check frontmatter using a schema
+        schema: ({ image }) =>
+                z.object({
+                        quote: z.string(),
+                        author: z.string(),
+			date: z.string(),
+                        pubDate: z.coerce.date(),
+                        updatedDate: z.string().optional(),
+                }),    
+});
+
                                 
-export const collections = { blog, sotw};
+export const collections = {blog, sotw, qotw};

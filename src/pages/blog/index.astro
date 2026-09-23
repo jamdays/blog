@@ -8,8 +8,7 @@ import '@styles/global.css';
 
 const posts = await getCollection('blog');
 
-// 2. (Optional) Sort posts so newest appear first
-//posts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
+posts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 ---
 
 <html lang="en">

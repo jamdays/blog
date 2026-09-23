@@ -18,7 +18,7 @@ const sotw = await getCollection('sotw');
 		<div class="card">
 		{
 		  sotw.map((post) => (
-		    <SotWLink href={post.id}>
+		  <SotWLink href={post.id} imgsrc={post.data.coverArt}>
 		      <h3 slot="title">{post.data.title}</h3>
 		      <p slot="artist">{post.data.artist}</p>
 		    </SotWLink>

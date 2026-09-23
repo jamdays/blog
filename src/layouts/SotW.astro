@@ -30,7 +30,16 @@ const {title, artist, link, releaseDate, pubDate, updatedDate, coverArt} = Astro
 				<a href={link}><h2>{title}</h2></a>
 				<h3>{artist}</h3>
 				<h3>{releaseDate}</h3>
-				<div class="date" >{pubDate}
+				<div class="date" >
+					<time datetime={pubDate.toISOString()}>
+					  {
+					    pubDate.toLocaleDateString('en-US', {
+					      year: 'numeric',
+					      month: 'long',
+					      day: 'numeric',
+					    })
+					  }
+					</time>
 					{
 					updatedDate && (
 					<div class="last-updated-on">
