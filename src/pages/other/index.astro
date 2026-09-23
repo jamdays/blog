@@ -1,8 +1,12 @@
 ---
+import { getCollection } from 'astro:content';
 import Header  from "@components/Header.astro";
+import SotWLink from "@components/SotWLink.astro";
 import BaseHead from "@components/BaseHead.astro";
 import {Font} from 'astro:assets';
 import '@styles/global.css';
+
+const sotw = await getCollection('sotw');
 ---
 
 <html lang="en">
@@ -11,6 +15,15 @@ import '@styles/global.css';
 	</head>
 	<Header/>
 	<body>
-	<div class="card"></div>
+		<div class="card">
+		{
+		  sotw.map((post) => (
+		    <SotWLink href={post.id}>
+		      <h3 slot="title">{post.data.title}</h3>
+		      <p slot="artist">{post.data.artist}</p>
+		    </SotWLink>
+		  ))
+		}
+		</div>
 	</body>
 </html>

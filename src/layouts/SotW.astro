@@ -1,0 +1,49 @@
+---
+import BaseHead from '@components/BaseHead.astro';
+import Header from '@components/Header.astro';
+import { Image } from 'astro:assets';
+import type {CollectionEntry} from 'astro:content';
+
+
+type Props = CollectionEntry<'sotw'>['data'];
+
+const {title, artist, link, releaseDate, pubDate, updatedDate, coverArt} = Astro.props;
+---
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={`SotW ${pubDate}`}/>
+	</head>
+	<body>
+		<Header/>
+		<main>
+		<article>
+			<div class="card">
+			<div class="sotw-title">
+			<div class="title">
+				{ coverArt && ( 
+				<Image
+				src={coverArt}
+				alt={`Cover art for ${title}`}
+				width={300}
+				height={300}
+				/>)}
+				<a href={link}><h2>{title}</h2></a>
+				<h3>{artist}</h3>
+				<h3>{releaseDate}</h3>
+				<div class="date" >{pubDate}
+					{
+					updatedDate && (
+					<div class="last-updated-on">
+						Last updated on {updatedDate} 
+					</div> )
+						}
+				</div>
+				<hr/>
+			</div>
+			</div>
+			<slot/>
+			</div>
+		</article>
+		</main>
+	</body>
+</html>

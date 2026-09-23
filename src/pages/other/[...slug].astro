@@ -1,0 +1,20 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import SotW from '@layouts/SotW.astro';
+ 
+export async function getStaticPaths() {
+        const posts = await getCollection('sotw');
+        return posts.map((post) => ({
+	params: { slug: `sotw/${post.id}` },
+                props: post,
+        }));
+}
+type Props = CollectionEntry<'sotw'>;
+ 
+const post = Astro.props;
+const { Content } = await render(post);
+---
+ 
+<SotW {...post.data}>
+        <Content />
+</SotW>

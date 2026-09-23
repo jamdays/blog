@@ -1,0 +1,18 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'a'>;
+
+const { href, class: className, ...props } = Astro.props;
+---
+<a href={`/other/sotw/${href}`} class:list={[className]} {...props}>
+	<slot name="title"><h3>Title</h3></slot>
+	<slot name="artist"><p>Those who know</p></slot>
+	<hr>
+</a>
+<style>
+  a {
+    text-decoration: none;
+    color: var(--blue);
+  }
+</style>
