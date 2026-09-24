@@ -45,7 +45,8 @@ hr {
 }
 .card{
 	width: 50%;
-	height: 900px;
+	min-height: 800px;
+	height: auto;
 	border-radius: 2%;
 	border-color: var(--highlight);
 	border-width: 10px;

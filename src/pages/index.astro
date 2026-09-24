@@ -1,7 +1,8 @@
 ---
 import Header  from "@components/Header.astro";
 import BaseHead from "@components/BaseHead.astro";
-import {Font} from 'astro:assets';
+import {Font, Image} from 'astro:assets';
+import hongkongphooey from '../assets/images/hongkongphooey.jpg';
 import '@styles/global.css';
 ---
 
@@ -11,9 +12,74 @@ import '@styles/global.css';
 	</head>
 	<Header/>
 	<body>
-	<div class="lr-box">
-	<div class="card">Hello world</div>
-	<div class="card">Hello world</div>
+	<div>
+		<div class="card">
+		<div class="centerimg">
+		<Image src={hongkongphooey} alt="role model" width=500% class=thumbnail />
+		</div>
+		<h1> Welcome </h1>
+		Welcome to my blog, I'll write things here about whatever interests me. I felt like I've been lagging behind a couple of
+		friends who have already been blogging for a long time, so now, <a href="">2026 years after Jesus' birth</a>, I will start my blog.
+		<br>
+		<br>
+		Check out my friends' blogs.
+		<br>
+		Punpun: <a href="https://punx2.vercel.app/">https://punx2.vercel.app/</a>
+		<br>
+		Aayush: <a href="https://aayushkarki.com/">https://aayushkarki.com/</a>
+		<br>
+		Oscar:  <a href="https://baleinegris.github.io/blog/">https://baleinegris.github.io/blog/</a>
+		<br>
+		Harry: <a href="https://mvp-harry.github.io/">https://mvp-harry.github.io/</a>
+		<br>
+		<br>
+		You can also check out my website: <a href="https://jamdays.github.io/">https://jamdays.github.io/</a>
+		<br>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<h1> About Me </h1>
+		My name is Max. I'm interested in
+		plenty of things, but, before I get into it, there is also a pictorial
+		representation on the left for those who look.
+		<br>
+		<br>
+		Anyway, you should treat this more like two truths and a lie, because I'm 
+		gonna put some fake information so no one can build a psychological profile of me,
+		and then manipulate me into revealing personal details on the internet. 
+		<br>
+		<br>
+		Ok, now, here are some personal details about me.
+		I grew up in Portland, OR, USA. Growing up, I mostly read books and played games on my tablet,
+		but I also had to go to mass and school. My role model is hong kong phooey because he is quite smart and solves mysteries.	
+		<br>
+		<br>
+		Really, that should be enough to understand who I am to the extent you have to. Otherwise, if you want to know more about
+		me you can just read my blog. I won't be including so many pictures in general, so perhaps young children may struggle to 
+		get to know me better. 
+		<br>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<h1> More </h1>
+		Here's how to contact me
+		<ul>
+			<li>Email: <a href="mailto:mdjaya@protonmail.com">mdjaya@protonmail.com</a> </li>
+		</ul>
+		</div>
 	</div>
 	</body>
 </html>
+<style>
+	.thumbnail {
+		border-radius: 100%;
+		margin: auto;
+	}
+	.centerimg {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+</style>

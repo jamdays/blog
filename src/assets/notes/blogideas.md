@@ -1,0 +1,11 @@
+## Blog Ideas
+---
+-[ ] Illumos vs. FreeBSD/OpenBSD (Niche OS)
+-[ ] What I chose, Gentoo or Arch (And why)
+-[ ] Winning Ways for your mathematical plays.
+-[ ] Fluid Simulation with WebGPU.
+	-[ ] Waves with billows simulation.
+	-[ ] Pou Hill Driving x Waves with billows. 
+-[ ] Icicle Forming Simulation.
+-[ ] Setting up I2P
+-[ ] Custom ROM on old android
