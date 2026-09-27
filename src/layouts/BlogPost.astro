@@ -2,11 +2,12 @@
 import BaseHead from '@components/BaseHead.astro';
 import Header from '@components/Header.astro';
 import type {CollectionEntry} from 'astro:content';
+import {Image} from 'astro:assets';
 
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const {title, description, pubDate, updatedDate} = Astro.props;
+const {title, description, pubDate, updatedDate, image} = Astro.props;
 ---
 <html lang="en">
 	<head>
@@ -19,6 +20,13 @@ const {title, description, pubDate, updatedDate} = Astro.props;
 			<div class="card">
 			<div class="title">
 				<h1>{title}</h1>
+				{ image && ( 
+				<Image
+				src={image}
+				alt={`Thumbnail for ${title}`}
+				width={640}
+				height={333}
+				/>)}
 				<div class="date" >
 					<time datetime={pubDate.toISOString()}>
 					  {
