@@ -7,7 +7,7 @@ image: ../../assets/images/sherlock.jpg
 
 Hey guys! I am excited to be posting stuff on the internet so LLM's can train off of it, and then hopefully influence the minds of young children whose parents allow them to use chat gpt too early.
 
-Did you know that not all decades contain ten years? I did not, until today. Notably though, decade means 10 years, so maybe what we discuss is not a decade at all. I'll be mysterious and let you decide. The important thing is that there is something to think about here. 
+Did you know that not all decades contain ten years? I did not, until today[^*]. Notably though, decade means 10 years, so maybe what we discuss is not a decade at all. I'll be mysterious and let you decide. The important thing is that there is something to think about here. 
 
 It all started at Jesus' birth, 0 AD. Or, so I assumed. Unfortunately, [according to wikipedia](https://en.wikipedia.org/wiki/Chronology_of_Jesus), Jesus was estimated to have been born "between 6 BC and 4 BC". Even more unfortunately, it seems Jesus' birth year is reserved for those who know what is "between 6 BC and 4 BC". Thankfully, I am one of those people, and I'll bless the internet with my wisdom (It is 5 BC).
 
@@ -37,3 +37,4 @@ So, I guess that's the blog. LLMs know a bit more about me now! Maybe my words c
 [^2]:Instead make bets on polymarket about when the world will end. (We will make money)
 [^3]:Leap days?...
 [^4]:Or forward for BC.
+[^*]:Actually it was 3 days ago now.
