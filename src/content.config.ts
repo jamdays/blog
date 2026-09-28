@@ -28,6 +28,7 @@ const sotw = defineCollection({
 			link: z.string(),
 			releaseDate: z.string(),
                         pubDate: z.coerce.date(),
+			week: z.string(),
                         updatedDate: z.string().optional(),
                         coverArt: z.optional(image()),
                 }),    
@@ -43,6 +44,7 @@ const qotw = defineCollection({
                         author: z.string(),
 			releaseDate: z.string(),
                         pubDate: z.coerce.date(),
+			week: z.string(),
                         updatedDate: z.string().optional(),
                 }),    
 });

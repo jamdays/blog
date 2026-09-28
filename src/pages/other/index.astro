@@ -29,10 +29,10 @@ posts.sort((a, b) => new Date(b.entry.data.pubDate).getTime() - new Date(a.entry
 		{
 		  posts.map((post) => (
 		  post.type === 'sotw' ? (
-		  <SotWLink href={post.entry.id} imgsrc={post.entry.data.coverArt}>
+		  <SotWLink href={post.entry.id} imgsrc={post.entry.data.coverArt} week={post.entry.data.week}>
 		      <h3 slot="title">{post.entry.data.title}</h3>
 		      <p slot="artist">{post.entry.data.artist} &#x2022; {post.entry.data.releaseDate}</p>
-		  </SotWLink>) : (<QotWLink href={post.entry.id}>
+		  </SotWLink>) : (<QotWLink href={post.entry.id} week={post.entry.data.week}>
 			  <h3 slot="quote">"{post.entry.data.quote}"</h3>
 			  <p slot="author">- {post.entry.data.author} &#x2022; {post.entry.data.releaseDate}</p>
 	  	  </QotWLink>)

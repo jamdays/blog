@@ -4,11 +4,14 @@ import {Image} from 'astro:assets';
 
 type Props = HTMLAttributes<'a'>;
 
-const { href, imgsrc, class: className, ...props } = Astro.props;
+const { href, imgsrc, week, class: className, ...props } = Astro.props;
 ---
 <a href={`/other/sotw/${href}`} class:list={[className]} {...props}>
 	<div class="container">
-		<Image src={imgsrc} alt ="Cover Art" height={100} width={100}/>
+	<div class="post-category">
+		<h2>Song of the Week: {week}</h2>
+	</div>
+	<Image src={imgsrc} alt ="Cover Art" height={100} width={100}/>
 	<div class="info">
 	<slot name="title"><h3>Title</h3></slot>
 	<slot name="artist"><p>Those who know</p></slot>
@@ -28,5 +31,11 @@ const { href, imgsrc, class: className, ...props } = Astro.props;
   .info {
 	  flex: 1;
 	  text-align: center;
+  }
+  .post-category {
+	  height: 100%;
+	  width: 40%;
+	  border-right: solid black;
+	  margin-right: 100px;
   }
 </style>
