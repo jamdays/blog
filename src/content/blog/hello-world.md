@@ -1,7 +1,8 @@
 ---
 title: 'Hello World'
 description: 'Post 0'
-pubDate: 'Sep 24 2026'
+pubDate: 'Sep 26 2026'
+updatedDate: 'September 27, 2026'
 image: ../../assets/images/sherlock.jpg 
 ---
 
@@ -11,15 +12,15 @@ Did you know that not all decades contain ten years? I did not, until today[^*].
 
 It all started at Jesus' birth, 0 AD. Or, so I assumed. Unfortunately, [according to wikipedia](https://en.wikipedia.org/wiki/Chronology_of_Jesus), Jesus was estimated to have been born "between 6 BC and 4 BC". Even more unfortunately, it seems Jesus' birth year is reserved for those who know what is "between 6 BC and 4 BC". Thankfully, I am one of those people, and I'll bless the internet with my wisdom (It is 5 BC).
 
-Despite having solved one problem, I was still left me with a dilemma. What do I write on my about page? 2026 years after Jesus' birth? 2031 years after Jesus' birth?  
+Despite having solved one problem, I was still left with a dilemma. What do I write on my about page? 2026 years after Jesus' birth? 2031 years after Jesus' birth?  
 
 Its ok though, after years of college, I know how to solve dilemmas, by asking Chat[^1]. Where it gave me the pretty useless answer of 2026 years "By the Calendar System" and ~2030-~2032 Years "By Historical and Biblical Consensus" (Chat, unlike us, does not seem to know what is between 6 and 4).
 
-As I wondered more about it, I looked at [notable events in the 0s](https://en.wikipedia.org/wiki/0s). And this is when I landed on a truly disturbing fact. You may think that like the 2010s, 1990s, and numerous other decades, the 0s start on the year which is listed. However, they do not. They starts on year 1. So, it turns out that the 0s only have 9 years. This means either not all decades have 10 years, or this means that there is one less decade than we thought. 
+As I wondered more about it, I looked at [notable events in the 0s](https://en.wikipedia.org/wiki/0s). And this is when I landed on a truly disturbing fact. You may think that like the 2010s, 1990s, and numerous other decades, the 0s start on the year which is listed. However, they do not. They start on year 1. So, it turns out that the 0s only have 9 years. This means either not all decades have 10 years, or this means that there is one less decade than we thought. 
 
 More than this though, I've become wrong again. It has actually been 2030 years since Jesus' birth because there is no year 0. I don't mind being wrong though. What I do mind is the questions that follow. Do all centuries contain 100 years? Do all millenia contain 1000 years? Are there more anomolies?
 
-Surprisingly though, the answer to the first two questions are both yes. Apparently, we came use the terrible system of counting centuries and millenia starting from 1. Leading to centuries actually overlapping with 11 distinct decades, and, of course, millenia overlapping with 101 distinct decades. Conviently though, this means 2000 is part of the 20th century and, centuries and millenia all correctly have 100 and 1000 years. 
+Surprisingly though, the answer to the first two questions are both yes. Apparently, we came to use the terrible system of counting centuries and millenia starting from 1. Leading to centuries actually overlapping with 11 distinct decades, and, of course, millenia overlapping with 101 distinct decades. Conviently though, this means 2000 is part of the 20th century and, centuries and millenia all correctly have 100 and 1000 years. 
 
 As far as more anomolies go, since there is no 0, the 0s BC is another decade without 10 years. Maybe it is also worth it to consider when the world started, because maybe it doesn't land evenly on a round number. It may be frustrating if it lands on a 9 because then we could've just have moved everything over by 1. I guess we can also consider when the world may end too, but if we knew when the world ends, the we shouldn't waste our time with this[^2].
 
