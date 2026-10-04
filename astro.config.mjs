@@ -4,6 +4,10 @@ import { defineConfig, fontProviders} from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
    site: 'https://blog.mdjaya.dev',
+   image: {
+	   responsiveStyles: true,
+	   layout: 'constrained',
+   },
     fonts: [
   {
     provider: fontProviders.local(),
