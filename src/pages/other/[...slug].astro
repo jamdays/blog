@@ -4,8 +4,8 @@ import SotW from '@layouts/SotW.astro';
 import QotW from '@layouts/QotW.astro';
  
 export async function getStaticPaths() {
-        const songs = await getCollection('sotw');
-        const quotes = await getCollection('qotw');
+const songs = await getCollection('sotw', ({data}) => data.draft !== true);
+        const quotes = await getCollection('qotw', ({data}) => data.draft !== true);
 
         const quotePaths = quotes.map((quote) => ({
 	params: { slug: `qotw/${quote.id}` },

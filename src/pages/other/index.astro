@@ -7,8 +7,8 @@ import BaseHead from "@components/BaseHead.astro";
 import {Font} from 'astro:assets';
 import '@styles/global.css';
 
-const songs = await getCollection('sotw');
-const quotes = await getCollection('qotw');
+const songs = await getCollection('sotw', ({data}) => data.draft !== true);
+const quotes = await getCollection('qotw', ({data}) => data.draft !== true);
 
 const posts = [
   ...songs.map((song) => ({ type: 'sotw' as const, entry: song })),

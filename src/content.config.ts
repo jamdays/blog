@@ -14,6 +14,7 @@ const blog = defineCollection({
                         pubDate: z.coerce.date(),
                         updatedDate: z.string().optional(),
                         image: z.optional(image()),
+			draft: z.boolean().optional(),
                 }),    
 });
 
@@ -31,6 +32,7 @@ const sotw = defineCollection({
 			week: z.string(),
                         updatedDate: z.string().optional(),
                         coverArt: z.optional(image()),
+			draft: z.boolean().optional(),
                 }),    
 });
 
@@ -46,6 +48,7 @@ const qotw = defineCollection({
                         pubDate: z.coerce.date(),
 			week: z.string(),
                         updatedDate: z.string().optional(),
+			draft: z.boolean().optional(),
                 }),    
 });
 
