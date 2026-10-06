@@ -1,5 +1,8 @@
 ## Blog Ideas
 ---
+-[ ] S box 5, NSA, and Why you should design your own system
+-[ ] Wtf is a peashooter
+-[ ] Stylometry
 -[ ] Illumos vs. FreeBSD/OpenBSD (Niche OS)
 -[ ] What I chose, Gentoo or Arch (And why)
 -[ ] Winning Ways for your mathematical plays.
@@ -7,5 +10,5 @@
 	-[ ] Waves with billows simulation.
 	-[ ] Pou Hill Driving x Waves with billows. 
 -[ ] Icicle Forming Simulation.
--[ ] Setting up I2P
+-[x] Setting up I2P
 -[ ] Custom ROM on old android
