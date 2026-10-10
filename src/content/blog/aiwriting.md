@@ -11,7 +11,7 @@ I wrote a complete first draft for this post wednesday night, but a lot has chan
 
 The most amazing thing about Klara and the Sun, to me, was that they only ever mentioned two real life locations.
 First, Kazuo's home country of England and ,second, Portland, Oregon. Not only that, Portland is the only city mentioned in the book, and it was brought up extremely out of the blue. 
-Maybe, I am too surprised to see my home city in this book, but between this and Ex Machina, I'm starting to think British Futurists have, for reasons unknown to me, an oversized impression of the Rose City.
+Maybe, I am too surprised to see my home city in this book, but between this and Ex Machina, I'm starting to think British science fiction has, for reasons unknown to me, an oversized impression of the Rose City.
 
 For those who haven't read the book, the only important thing is Klara is an "AF" or Artificial Friend. 
 As far as I understand, the Artificial Friends are basically sentient robots meant to be friends to kids who are betweeen 10 and 16.
@@ -24,9 +24,9 @@ The OSINT meeting was a bit more straightforward. But, it just made the amount o
 
 ## And?
 
-Really, originally, I was working on a different but very similar post about "Stylometry" with this same thumbnail from the emoji analysis season of south park. If you know about either of these things, or just know latin roots, you might see where I'm going. 
+Really, originally, I was working on a different but very similar post about "[Stylometry](https://en.wikipedia.org/wiki/Stylometry)" with this same thumbnail from the emoji analysis season of south park. If you know about either of these things, or just know latin roots, you might see where I'm going. 
 
-For the brief 2 days that I took linguistics, I also remember learning about the term "idiolects". 
+For the brief 2 days that I took linguistics, I also remember learning about the term "[idiolects](https://en.wikipedia.org/wiki/Idiolect)". 
 
 Either way, the important thing is. What you write, how you write, it is all unique to you. It is your own likeness, and most of the time it uniquely identifies you. 
 
@@ -44,7 +44,7 @@ Shouldn't the value of our ideas be based on the content, and not how genuine it
 What about those who care whether linkedin users write with AI or not?
 Would you sacrifice your likeness for a linked in post? For a job? Maybe a few hundred genuine linked posts, a few genuine blogs, get you the job that you've been trying to get, one where you can make cool stuff, work on cool stuff, learn new things.
 
-Who knows? I definitely don't. I'm not a serial killer or ransomer so I don't need to hide my style by stitching my words together with magazine articles (I'm only a pirate in blox fruits, and I'm pretty sure that is legal). 
+Who knows? I definitely don't. I'm not a serial killer or ransomer so I don't need to hide my style by stitching my words together with magazine articles (I'm only a pirate in [blox fruits](https://blox-fruits.fandom.com/wiki/Blox_Fruits), and I'm pretty sure that is legal). 
 But still, what if I need to write anonymously one day? What should I do? 
 
 And what if you aren't good at writing? I recieved a private education, with great teachers, ones who made sure I paid attention in class, and even then, I had to put in a lot of effort to make my writing just ok. Why shouldn't you write with AI? What about in a corporate setting? There are pre-defined rules on how you should speak. Can't an AI just do that for you? Translate your bullet points into words?
