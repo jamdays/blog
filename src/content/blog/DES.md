@@ -35,29 +35,31 @@ So, what was FIPS 46? Why were academics skeptical? And, did they really ride ho
 
 Let us zoom in a bit to answer these questions. Upon the anouncment of FIPS 46, Alice, not much of a horse rider, decided she wanted to contact Prof. Bob about the interesting news. So, she decided to message him online.
 
-Alice: "Hey Prof. Bob, did you see FIPS 46? It's awesome that we can talk secretly online now"
 
-Bob: "Those who know"
+>**Alice**: "Hey Prof. Bob, did you see FIPS 46? It's awesome that we can talk secretly online now"
+>
+>**Bob**: "Those who know"
+>
+>**Alice**: "Yeah, it was very exciting to see them release the Data Encryption Standard"
+>
+>**Bob**: "Facts blud"
+>
+>**Alice**: "I'm so happy they didn't release the design process or specifications, because that would be so confusing"
+>
+>**Bob**: "Low-key true" 
+>
+>**Alice**: "It is also great that the NSA helped them design DES"
+>
+>**Bob**: "Wait what" 
+>
+>**Alice**: "The NSA is so smart, I'm sure they know more than us"
+>
+>**Bob**: "Ok facts"
+>
+>**Alice**: "It is 1977 so I ride horses"
+>
+>**Bob**: "Me too"
 
-Alice: "Yeah, it was very exciting to see them release the Data Encryption Standard"
-
-Bob: "Facts blud"
-
-Alice: "I'm so happy they didn't release the design process or specifications, because that would be so confusing"
-
-Bob: "Low-key true" 
-
-Alice: "It is also great that the NSA helped them design DES"
-
-Bob: "Wait what" 
-
-Alice: "The NSA is so smart, I'm sure they know more than us"
-
-Bob: "Ok facts"
-
-Alice: "It is 1977 so I ride horses"
-
-Bob: "Me too"
 
 
 
