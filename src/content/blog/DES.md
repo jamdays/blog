@@ -1,7 +1,7 @@
 ---
 title: 'DES + NSA = <3'
-description: 'Post X'
-pubDate: 'Oct 17 2026'
+description: 'Post 3'
+pubDate: 'Oct 18 2026'
 image: ../../assets/images/DES.png 
 draft: false
 ---
@@ -60,7 +60,31 @@ Let us zoom in a bit to answer these questions. Upon the anouncment of FIPS 46, 
 >
 >**Bob**: "Me too"
 
+From this definitely historical conversation, we can pick up a couple of things. First, FIPS 46 was the release of DES. Second, Bob is skeptical because they didn't release release the reasoning behind many design choices. Third, the NSA was somehow involved in the design process. Fourth, they confirmed they rode horses in 1977.
 
+So, what is going on? Who designed DES, and why did the NSA help? Well, it comes down to the story of another three letter organization, one of the most important ones in computer history, IBM.
+
+## The History
+
+IBM designed DES when the National Bureau of Standards solicited proposals for a public encryption standard[^2]. However, when DES was released in 1977, as you can tell from the above historical conversation, people were suspicious. And rightfully so, even now, design reasoning for many of the critical parts of DES are not well understood. This skepticism basically created the academic discipline of cryptanalysis.  
+However, more than the unclear design reasoning, the NSA was involved.
+
+The NSA suggested many changes to the algorithm, and even at IBM it seemed people might not have known why. There is evidence that the NSA might've saved us, making DES more secure, and there are suspicous details and other things that remain unclear. 
+
+Really though, people spent years trying to reverse engineer the criteria for choosing certain parts of the system. And still, to this day, there are speculations about unknown weaknesses in certain components. The NSA also famously tried to convince IBM to reduce the key size from 64 to 48 bits, and in the end they compromised on 56. This is the difference between 1 day to brute force a key and 256 days. 
+
+The most interesting of these details (besides S-box 5 of course) is the story of differential cryptanalysis.
+
+Differential cryptanalysis was a technique to break DES discovered by Eli Biham and Adi Shamir in 1992. The drama is best summed up with a short remark in the preface of their textbook on differentail cryptanalysis. 
+
+> Remark: Shortly before this book was sent to the publishers, Don Coppersmith (who was a member of the DES design team at IBM in the early 70’s) revealed that his team was aware of differential cryptanalysis back in 1974, and designed the S boxes and the permutation in order to optimally defeat it. They had to keep this information secret for 18 years for national security reasons since it was such a potent form of cryptanalysis, but decided to break the silence after we rediscovered and published it. In response to our question, Don refused to reveal whether this is the strongest attack on the DES that his team was aware of, but reiterated his belief that the DES is still viable.
+
+Interestingly, as stated, "Don refused to reveal whether this is the strongest attack on DES that his team was aware of".
+
+## So what?
+
+Well, I can't make any conclusions for you. Maybe the NSA was involved to harden DES or maybe to weaken it.
 
 
 [^1]: [FIPS 46](https://csrc.nist.gov/pubs/fips/46/final)
+[^2]: This was actually on the second solicitation because no proposal was accepted as sufficient the first time.
