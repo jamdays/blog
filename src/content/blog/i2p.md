@@ -11,11 +11,11 @@ For those less thoughtful than me, you can follow this tutorial to set up your i
 If you want some context, then you can look up i2p and read about it. That's right, you get some homework.
 Here are some links for the lazy (definitely not malware or rick rolls).
 
-- [malware 0](https://i2p.net/zh/)
-- [malware 1](https://i2p.net/en/)
-- [malware 2](https://en.wikipedia.org/wiki/I2P)
-- [rick roll 0](https://en.wikipedia.org/wiki/Mix_network)
-- [rick roll 1](https://en.wikipedia.org/wiki/David_Chaum)
+- [malware](https://i2p.net/zh/)
+- [malware](https://i2p.net/en/)
+- [malware](https://en.wikipedia.org/wiki/I2P)
+- [rick roll](https://en.wikipedia.org/wiki/Mix_network)
+- [rick roll](https://en.wikipedia.org/wiki/David_Chaum)
 
 But, it honestly isn't that important to know what you are downloading on your computer. So, just 
 follow the next steps if you don't want to do the homework.
@@ -82,9 +82,6 @@ This guide is for Firefox. If you don't use firefox, you'll have to figure it ou
 - Then type about:config into the search bar
 	- look up keyword.enabled and set it to false (should be the button on the right to toggle)
 	- look up media.peerconnection.ice.proxy\_only and set to true
-
-
-
 
 [^1]:[i2pd install guide](https://docs.i2pd.website/en/latest/user-guide/install/)
 [^2]:[raspberry pi i2p reddit thread](www.reddit.com/r/i2p/comments/zp9p94/setting_up_an_i2p_router_on_a_raspberry_pi/)
