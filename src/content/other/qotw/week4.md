@@ -1,7 +1,7 @@
 ---
 quote: "No animal shall sleep in a bed with sheets"
 author: "Jorjor well" 
-releaseDate: 1984 
+releaseDate: "1984"
 pubDate: Oct 24, 2026
 week: "4"
 draft: false
