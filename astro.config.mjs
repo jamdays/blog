@@ -1,9 +1,12 @@
 // @ts-check
 import { defineConfig, fontProviders} from 'astro/config';
+import mdx from '@astrojs/mdx';
+                                                       
 
 // https://astro.build/config
 export default defineConfig({
    site: 'https://blog.mdjaya.dev',
+  integrations: [mdx()],
    image: {
 	   responsiveStyles: true,
 	   layout: 'constrained',
